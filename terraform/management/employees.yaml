@@ -1,0 +1,36 @@
+Employees:
+  - Department:
+    - Dev:
+      - username: "danielf"
+        group: developer
+        email  : danielf@example.com
+        firstname  : daniel
+        lastname   : folsik
+        password   : 1234
+      - username: "johnb"
+        group: developer
+        email  : johnb@example.com
+        firstname  : john
+        lastname   : belk
+        password   : 1234
+    - Ops:
+      - username: "benol"
+        group: devops
+        email  : benol@example.com
+        firstname  : ben
+        lastname   : olkin
+        password   : 1234
+      - username: "pauld"
+        group: devops
+        email  : pauld@example.com
+        firstname  : paul
+        lastname   : dempler
+        password   : 1234
+
+Groups:
+  - developer:
+    role: developer
+    policies   : ["default", "dev"]
+  - devops:
+    role: devops
+    policies   : ["default", "admin"]
